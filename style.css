@@ -1,0 +1,135 @@
+:root {
+  --verde: #4caf50;
+  --verde-claro: #a5d6a7;
+  --fondo: #f4fdf4;
+  --gris: #f0f0f0;
+  --sombra: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--fondo);
+  margin: 0;
+  color: #333;
+}
+
+header .banner {
+  background: linear-gradient(to right, #2e7d32, var(--verde));
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.menu {
+  background-color: var(--verde-claro);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin: 0;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #1b5e20;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
+  display: grid;
+  gap: 2em;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2em;
+  box-shadow: var(--sombra);
+}
+
+.temas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.tema {
+  background-color: var(--verde-claro);
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: var(--sombra);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.galeria img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+form {
+  display: grid;
+  gap: 1em;
+}
+
+form input, form textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: var(--verde);
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #388e3c;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--gris);
+  padding: 1em;
+  margin-top: 2em;
+}
+
+footer .redes a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
